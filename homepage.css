@@ -1,0 +1,854 @@
+body {
+  overscroll-behavior: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li {
+  line-height: 1.3em;
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  li {
+    font-size: 18px;
+  }
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul,
+ol {
+  padding-left: 30px;
+}
+
+ul li {
+  list-style: disc;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+h3 {
+  margin-bottom: 2px;
+  font-size: calc(18px + 0.5vw);
+  line-height: 1em;
+}
+
+h4 {
+  margin-bottom: 20px;
+  font-family: 'Crimson Text', serif;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 1em;
+  letter-spacing: 0.3px;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+input[type='text'],
+input[type='email'],
+textarea {
+  border: 1px solid #ccc;
+  width: 100%;
+  padding: 10px;
+}
+
+input[type='text'],
+input[type='email'] {
+  height: 44px;
+}
+
+textarea {
+  resize: none;
+  height: 200px;
+}
+
+input[type='submit'] {
+  float: right;
+  border: 1px solid #ccc;
+  height: 44px;
+  padding: 0 20px;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: transparent;
+  color: #2a3439;
+}
+
+input[type='submit']:hover {
+  background-color: #2a3439;
+  color: white;
+  transition: color 0.3s, background 0.3s;
+}
+
+/* Common Classes */
+
+.headline {
+  font-size: 24px;
+  font-size: calc(24px + 1.2vw);
+  margin-bottom: 60px;
+  font-weight: 100;
+  text-transform: uppercase;
+  line-height: 1em;
+  font-family: 'Crimson Text', serif;
+  text-align: center;
+  padding-right: 10px;
+}
+
+.headline span {
+  position: relative;
+  display: inline-block;
+}
+
+.headline span:after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  height: 2px;
+  left: -20px;
+  right: -20px;
+  background-color: #2a3439;
+}
+
+.sub-headline {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.entry {
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.entry:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  background-color: rgba(0, 0, 0, 0.03);
+  box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.entry:last-of-type {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.entry:last-of-type:after {
+  display: none;
+}
+
+.actions {
+  overflow: hidden;
+}
+
+@media (min-width: 450px) and (max-width: 649px) {
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.actions button,
+.actions a {
+  display: block;
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #2a3439;
+  letter-spacing: 0.2px;
+  transition: letter-spacing 0.3s;
+}
+
+.actions span {
+  position: relative;
+}
+
+.actions span:before {
+  content: '';
+  height: 1px;
+  background-color: #2a3439;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transition: width 0.5s;
+  display: inline-block;
+}
+
+.actions button:hover,
+.actions a:hover {
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: letter-spacing 0.6s;
+}
+
+.actions > *:hover span:before,
+.actions > *:focus span:before {
+  width: 0;
+  transition: width 0.5s;
+}
+
+/* Body Grid */
+
+body-grid {
+  padding: 20px;
+  display: block;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 650px) {
+  body-grid {
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) {
+  body-grid {
+    padding: 40px;
+  }
+}
+
+/* Magness Contact */
+
+magness-contact {
+  position: relative;
+  text-align: center;
+  display: block;
+}
+
+@media (max-width: 649px) {
+  magness-contact {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 650px) {
+  magness-contact {
+    width: 250px;
+  }
+}
+
+@media (min-width: 900px) {
+  magness-contact {
+    width: 300px;
+  }
+}
+
+magness-contact div h1 {
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2em;
+  overflow: hidden;
+}
+
+@media (min-width: 650px) {
+  magness-contact h1 {
+    font-size: 32px;
+  }
+}
+
+magness-contact > div {
+  height: 100%;
+}
+
+@media (min-width: 650px) {
+  magness-contact > div {
+    position: fixed;
+    width: 250px;
+  }
+}
+
+@media (min-width: 650px) and (max-height: 700px) {
+  magness-contact > div {
+    overflow-y: scroll;
+  }
+}
+
+magness-contact > div > * {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 650px) {
+  magness-contact > div > * {
+    margin-bottom: 40px;
+  }
+}
+
+magness-contact > div > img {
+  width: 80%;
+  max-width: 250px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  display: block;
+}
+
+@media (max-width: 649px) {
+  magness-contact > div > img {
+    display: none;
+  }
+}
+
+magness-contact .description h2 {
+  margin-bottom: 8px;
+  letter-spacing: 0;
+  transition: letter-spacing 0.3s;
+  padding: 0 5px;
+  line-height: 1.1em;
+  font-weight: 400;
+}
+
+magness-contact .description h2:hover {
+  letter-spacing: 0.3px;
+  transition: letter-spacing 0.6s;
+}
+
+magness-contact .reverse {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+magness-contact .social {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+magness-contact .social a {
+  width: 50px;
+  margin-left: 10%;
+}
+
+magness-contact .social a:first-of-type {
+  margin-left: 0;
+}
+
+magness-contact .social a svg {
+  width: 100%;
+  display: block;
+  fill: #2a3439;
+  transition: fill 0.3s;
+}
+
+magness-contact .social a:hover svg {
+  fill: #696969;
+  transition: fill 0.6s;
+}
+
+/* Magness Content */
+
+magness-content,
+magness-content > * {
+  display: block;
+}
+
+@media (min-width: 650px) {
+  magness-content {
+    width: calc(100% - 250px);
+    padding-left: 40px;
+    position: relative;
+  }
+
+  magness-content:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -100px;
+    bottom: -100px;
+    width: 3px;
+    background-color: rgba(0, 0, 0, 0.03);
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.05);
+  }
+}
+
+@media (min-width: 900px) {
+  magness-content {
+    width: calc(100% - 300px);
+    padding-left: 40px;
+  }
+}
+
+@media (max-width: 649px) {
+  magness-content > * {
+    margin-bottom: 40px;
+    display: block;
+  }
+}
+
+@media (min-width: 650px) {
+  magness-content > * {
+    margin-bottom: 120px;
+  }
+}
+
+/* Magness Summary */
+
+magness-summary {
+  margin-bottom: 60px;
+}
+
+magness-summary p {
+  line-height: 1.7em;
+}
+
+/* Magness Experience */
+
+magness-experience h3 {
+  margin-bottom: 10px;
+  font-size: calc(18px + 1vw);
+  font-family: 'Crimson Text', serif;
+  text-transform: uppercase;
+  line-height: 1em;
+  letter-spacing: 1px;
+}
+
+@media (min-width: 650px) {
+  magness-experience h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+
+magness-experience h3 span {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-transform: none;
+  letter-spacing: 0;
+  font-style: italic;
+}
+
+magness-experience .entry h4,
+magness-experience .entry h5 {
+  font-size: calc(18px + 0.3vw);
+  margin-bottom: 0;
+  line-height: 1em;
+}
+
+magness-experience .entry h4 {
+  font-weight: 700;
+  font-style: normal;
+  font-family: 'Crimson Text', serif;
+}
+
+magness-experience .entry h5 {
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+magness-experience ul {
+  margin-bottom: 40px;
+}
+
+magness-experience ul:last-of-type {
+  margin-bottom: 0;
+}
+
+magness-experience li {
+  margin-bottom: 20px;
+  list-style: none;
+  position: relative;
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+magness-experience ul:not(.clients) li:after {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 7px;
+  border-left: 5px solid #2a3439;
+  border-bottom: 5px solid transparent;
+  border-top: 5px solid transparent;
+}
+
+magness-experience li:last-of-type {
+  margin-bottom: 0;
+}
+
+magness-experience li > ul {
+  margin-top: 10px;
+}
+
+magness-experience li > ul > li {
+  margin-bottom: 6px;
+  list-style: disc;
+}
+
+magness-experience li > ul > li:after {
+  display: none;
+}
+
+magness-experience ul.clients {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+magness-experience ul.clients li {
+  width: 45%;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+magness-experience ul.clients li:after {
+  content: '';
+  position: absolute;
+  left: -15px;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  background: radial-gradient(#2a3439 0%, white 50%, #2a3439 80%, white);
+  border-radius: 50%;
+}
+
+@media (min-width: 480px) and (max-width: 649) {
+  magness-experience ul.clients li:nth-of-type(2),
+  magness-experience ul.clients li:first-of-type {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 901px) {
+  magness-experience ul.clients li:nth-of-type(2),
+  magness-experience ul.clients li:first-of-type {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 479px) {
+  magness-experience ul.clients {
+    display: block;
+  }
+
+  magness-experience ul.clients li {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 900px) {
+  magness-experience ul.clients {
+    display: block;
+  }
+
+  magness-experience ul.clients li {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+/* Magness Experience : Entry */
+
+magness-experience .entry {
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+
+/* Magness Experience : Company Info */
+
+magness-experience .company-info {
+  margin-bottom: 40px;
+}
+
+/* Magness Experience : Position Info */
+
+magness-experience .position-info p + ul {
+  margin-top: -10px;
+}
+
+magness-experience .position-info > ul {
+  margin-bottom: 30px;
+  padding-left: 50px;
+}
+
+magness-experience .position-info li {
+  list-style: disc;
+  margin-bottom: 10px;
+}
+
+magness-experience .position-info li:after {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  magness-experience .position-info > div {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  magness-experience .position-info > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 10px;
+  }
+}
+
+/* Magness Education */
+
+magness-education {
+  margin-bottom: 0;
+}
+
+magness-education h4 {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+magness-education h5 {
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 3px;
+}
+
+magness-education p > span {
+  display: block;
+}
+
+magness-education .entry > div {
+  margin-top: 20px;
+}
+
+@media (min-width: 900px) {
+  magness-education .entry > div {
+    display: flex;
+    align-items: center;
+  }
+}
+
+magness-education .entry > div p:first-of-type {
+  padding: 0 60px;
+  text-align: center;
+  font-family: 'Crimson Text', serif;
+  line-height: 1em;
+}
+
+@media (max-width: 900px) {
+  magness-education .entry > div p:first-of-type {
+    margin-bottom: 20px;
+  }
+}
+
+magness-education .entry > div p:first-of-type span {
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+/* Challenges */
+
+magness-challenge > p {
+  margin-bottom: 60px;
+}
+
+magness-challenge .actions > a {
+  text-align: left;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+magness-challenge .challenge {
+  position: relative;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+
+magness-challenge .challenge:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  background-color: rgba(0, 0, 0, 0.03);
+  box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+magness-challenge .challenge:last-of-type {
+  position: relative;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+magness-challenge .challenge:last-of-type:after {
+  display: none;
+}
+
+magness-challenge .challenge h3 {
+  margin-bottom: 20px;
+}
+
+magness-challenge .stack {
+  text-align: center;
+  align-self: flex-start;
+}
+
+magness-challenge .stack span {
+  font-weight: bold;
+  text-transform: uppercase;
+  white-space: nowrap;
+  display: block;
+  border-bottom: 1px solid black;
+}
+
+magness-challenge .stack ul {
+  padding: 0;
+}
+
+magness-challenge .stack li {
+  list-style: none;
+  display: block;
+}
+
+/* Modal */
+
+modal {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  top: 0;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+}
+
+modal > form {
+  background-color: white;
+  padding: 20px;
+  width: 80%;
+  max-height: 80%;
+  overflow-y: scroll;
+  max-width: 900px;
+  align-items: center;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  modal > form {
+    padding: 50px;
+  }
+}
+
+modal > form > div {
+  width: 100%;
+  padding-top: 40px;
+}
+
+modal form > div button.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+modal div.required {
+  margin-bottom: 20px;
+}
+
+modal div.required p {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+modal div.required span {
+  color: red;
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+modal .field {
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  modal .two-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+
+  modal .two-row > * {
+    width: 48%;
+    margin-bottom: 0;
+  }
+}
+
+[data-required='true'] label span {
+  color: red;
+}
+
+[isValid] input[type='text'],
+[isValid] input[type='email'],
+[isValid] textarea {
+  border: 1px solid green;
+}
+
+[isValid] label {
+  color: green;
+}
+
+[notValid] input[type='text'],
+[notValid] input[type='email'],
+[notValid] textarea {
+  border: 1px solid red;
+}
+
+[notValid] label {
+  color: red;
+}
+
+required,
+error {
+  max-height: 0;
+  display: block;
+  overflow: hidden;
+  color: red;
+  padding: 3px 0;
+  transition: max-height 0.3s ease-out;
+}
