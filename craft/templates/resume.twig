@@ -1,0 +1,903 @@
+{% set cssFile = 'resume' %}
+{% set jsFile = 'resume' %}
+
+{% extends '_layout' %}
+
+{% macro Skills() %}
+  <resume-skills>
+    <h3 class="headline-block">
+      Skills
+    </h3>
+    <ul>
+      <li>Javascript</li>
+      <li>React</li>
+      <li>NodeJS</li>
+      <li>PHP</li>
+      <li>Ruby</li>
+      <li>Scala</li>
+      <li>Laravel</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>CSS-in-JS</li>
+      <li>GraphQL</li>
+      <li>MySQL</li>
+      <li>PostgreSQL</li>
+      <li>Linux</li>
+      <li>Docker</li>
+      <li>User-centered Design</li>
+      <li>Atomic Design</li>
+      <li>Figma</li>
+      <li>Adobe</li>
+      <li>Storybook</li>
+      <li>Product Manager</li>
+      <li>Macro Strategist</li>
+      <li>Agile Development</li>
+      <li>Release Management</li>
+      <li>AWS Administration</li>
+    </ul>
+  </resume-skills>
+{% endmacro %}
+
+{% macro Education() %}
+  <h3 class="headline-block">
+    Education
+  </h3>
+  <resume-education>
+    <div>
+      <h4>
+        Masters of Science
+      </h4>
+      <p>
+        Applied Information Technology
+      </p>
+      <p>
+        Towson University
+      </p>
+    </div>
+
+    <div>
+      <h4>
+        Bachelors of Science
+      </h4>
+      <p>
+        Sports Management
+      </p>
+      <p>
+        Towson University
+      </p>
+    </div>
+  </resume-education>
+{% endmacro %}
+
+{% macro Social(params) %}
+  <h3 class="headline-block">
+    Social
+  </h3>
+  <resume-social>
+    <div>
+      <a href="https://github.com/magnessjo"
+        class="slide-line"
+        target="_blank"
+        rel="noopener noreferrer">
+        {% include '_icons/github' %}<span>Github</span>
+      </a>
+    </div>
+
+    <div>
+      <a href="https://www.linkedin.com/in/magnessjo"
+        class="slide-line"
+        target="_blank"
+        rel="noopener noreferrer">
+        {% include '_icons/linkedin' %}<span>Linkedin</span>
+      </a>
+    </div>
+  </resume-social>
+{% endmacro %}
+
+{% macro Awards() %}
+  <h3 class="headline-block">
+    Awards
+  </h3>
+  <resume-awards>
+    <div>
+      <h4>
+        <a href="https://andpizza.com"
+          target="_blank"
+          rel="noopener noreferrer">
+          &Pizza
+        </a>
+        <span>2019</span>
+      </h4>
+      <div class="snippet">
+        <a href="https://andpizza.com"
+          target="_blank"
+          rel="noopener noreferrer">
+          <img src="/images/awards/andpizza.jpg" alt="&Pizza site capture" />
+          <p>
+            WebAward <span>Outstanding</span>
+          </p>
+        </a>
+      </div>
+    </div>
+
+    <div>
+      <h4>
+        <a href="https://www.explorebaltimore.org"
+          target="_blank"
+          rel="noopener noreferrer">
+          Baltimore National Heritage
+        </a>
+        <span>2018</span>
+      </h4>
+      <div class="snippet">
+        <a href="https://www.explorebaltimore.org"
+          target="_blank"
+          rel="noopener noreferrer">
+          <img src="/images/awards/explore-baltimore.jpg"
+            alt="Explore Baltimore site capture" />
+          <p>
+            Addy <span>Silver</span>
+          </p>
+        </a>
+      </div>
+    </div>
+
+    <div>
+      <h4>
+        <a href="https://worldheritageusa.org/sites"
+          target="_blank"
+          rel="noopener noreferrer">
+          World Heritage USA
+        </a>
+        <span>2018</span>
+      </h4>
+      <div class="snippet">
+        <a href="https://worldheritageusa.org/sites"
+          target="_blank"
+          rel="noopener noreferrer">
+          <img src="/images/awards/heritage.jpg"
+            alt="World Heritage site capture" />
+          <p>
+            Addy <span>Silver</span>
+          </p>
+        </a>
+      </div>
+    </div>
+
+    <div>
+      <h4>
+        <a href="https://www.nps.gov/features/shen/index.html"
+          target="_blank"
+          rel="noopener noreferrer">
+          Shenandoah National Park
+        </a>
+        <span>2018</span>
+      </h4>
+      <div class="snippet">
+        <a href="https://www.nps.gov/features/shen/index.html"
+          target="_blank"
+          rel="noopener noreferrer">
+          <img src="/images/awards/shenandoah.jpg"
+            alt="Shenandoah site capture" />
+          <p>
+            Addy <span>Silver</span>
+          </p>
+        </a>
+      </div>
+    </div>
+
+    <div>
+      <h4>
+        <a href="https://hmshost.com" target="_blank" rel="noopener noreferrer">
+          HMSHost
+        </a>
+        <span>2016</span>
+      </h4>
+      <div class="snippet">
+        <a href="https://hmshost.com" target="_blank" rel="noopener noreferrer">
+          <img src="/images/awards/hmshost.jpg" alt="HMS Host site capture" />
+          <p>
+            Addy <span>Gold</span>
+          </p>
+        </a>
+      </div>
+    </div>
+
+    <div>
+      <h4>
+        <a href="https://www.exim.gov"
+          target="_blank"
+          rel="noopener noreferrer">
+          EXIM
+        </a>
+        <span>2015</span>
+      </h4>
+      <div class="snippet">
+        <a href="https://www.exim.gov"
+          target="_blank"
+          rel="noopener noreferrer">
+          <img src="/images/awards/exim.jpg" alt="EXIM site capture" />
+          <p>
+            Addy <span>Silver</span>
+          </p>
+        </a>
+      </div>
+    </div>
+
+    <div>
+      <h4>
+        <a href="https://web.archive.org/web/20150315002613/http://98online.com/homepage"
+          target="_blank"
+          rel="noopener noreferrer">
+          98online
+        </a>
+        <span>2015</span>
+      </h4>
+      <div class="snippet">
+        <a href="https://web.archive.org/web/20150315002613/http://98online.com/homepage"
+          target="_blank"
+          rel="noopener noreferrer">
+          <img src="/images/awards/98online.jpg" alt="98online site capture" />
+          <p>
+            Addy <span>Gold</span>
+          </p>
+        </a>
+      </div>
+    </div>
+
+    <div>
+      <h4>
+        <a href="https://www.alextom.com/projects/national-park-service"
+          target="_blank"
+          rel="noopener noreferrer">
+          The Captain John Smith Historical Trail
+        </a>
+        <span>2013</span>
+      </h4>
+      <div class="snippet">
+        <a href="https://www.alextom.com/projects/national-park-service"
+          target="_blank"
+          rel="noopener noreferrer">
+          <img src="/images/awards/smith.jpg" alt="Smith Trail site capture" />
+          <p>
+            Addy <span>Gold</span>
+          </p>
+        </a>
+      </div>
+    </div>
+
+    <div>
+      <h4>
+        <a href="https://www.alextom.com/projects/national-park-service"
+          target="_blank"
+          rel="noopener noreferrer">
+          Star-Spangled Banner National Historic Trail
+        </a>
+        <span>2013</span>
+      </h4>
+      <div class="snippet">
+        <a href="https://www.alextom.com/projects/national-park-service"
+          target="_blank"
+          rel="noopener noreferrer">
+          <img src="/images/awards/star.jpg" alt="Star Site site capture" />
+          <p>
+            Addy <span>Gold</span>
+          </p>
+        </a>
+      </div>
+    </div>
+
+    <div>
+      <h4>
+        <a href="https://www.alextom.com/projects/chesapeake-explorer"
+          target="_blank"
+          rel="noopener noreferrer">
+          Chesapeake Explorer
+        </a>
+        <span>2012</span>
+      </h4>
+      <div class="snippet">
+        <a href="https://www.alextom.com/projects/chesapeake-explorer"
+          target="_blank"
+          rel="noopener noreferrer">
+          <img src="/images/awards/explorer.jpg"
+            alt="Chesapeake Explore site capture" />
+          <p>
+            Addy <span>Gold</span>
+          </p>
+        </a>
+      </div>
+    </div>
+
+    <div>
+      <h4>
+        Park Points
+        <span>2011</span>
+      </h4>
+      <div class="snippet">
+        <img src="/images/awards/nps.jpg" alt="NPS site capture" />
+        <p>
+          Addy <span>Gold</span>
+        </p>
+      </div>
+    </div>
+  </resume-awards>
+{% endmacro %}
+
+{% macro Interests() %}
+  <h3 class="headline-block">
+    Interests
+  </h3>
+  <resume-interests>
+    <div>
+      <p>
+        W3C Standards
+      </p>
+      <p>
+        Design Systems
+      </p>
+    </div>
+    <div>
+      <p>
+        UX/UI
+      </p>
+      <p>
+        Web Components
+      </p>
+      <p>
+        Puzzles
+      </p>
+    </div>
+    <div>
+      <p>
+        Open Source
+      </p>
+      <p>
+        Animal Rescue
+      </p>
+    </div>
+    <div>
+      <p>
+        Travel
+      </p>
+      <p>
+        Machine learning
+      </p>
+      <p>
+        NASA
+      </p>
+    </div>
+    <div>
+      <p>
+        Home Improvement
+      </p>
+
+      <p>
+        Bulldogs
+      </p>
+    </div>
+    <div>
+      <p>
+        Soccer
+      </p>
+      <p>
+        Problem-Solving
+      </p>
+      <p>
+        Football
+      </p>
+    </div>
+
+    <div>
+      <p>
+        Architecture
+      </p>
+      <p>
+        Photography
+      </p>
+    </div>
+
+    <div>
+      <p>
+        WCAG
+      </p>
+      <p>
+        Generative modeling
+      </p>
+      <p>
+        Linux
+      </p>
+    </div>
+
+    <div>
+      <p>
+        Formula 1
+      </p>
+      <p>
+        Augmented reality
+      </p>
+    </div>
+  </resume-interests>
+{% endmacro %}
+
+{% macro Profile() %}
+  <h3 class="headline-block">
+    Profile
+  </h3>
+
+  <div class="profile">
+    <p>
+      I am a seasoned leader with over fourteen years of experience in software
+      development, specializing in human-centered design and engineering. My
+      career spans diverse projects across client, server, and native platforms,
+      making significant impacts in various domains. I have successfully
+      developed e-commerce systems for renowned brands such as Under Armour and
+      &Pizza, built content management systems and APIs for the University of
+      Maryland, created iOS applications and kiosk displays for the National
+      Park Service, and developed promotion microsites and gaming contests for
+      media companies like Hearst, Gannett, and Stronach.
+    </p>
+
+    <p>
+      With a strong front-end development and UX design background, I have been
+      instrumental in delivering multiple award-winning applications. As the
+      principal architect behind the University of Maryland's first design
+      system library, I specialize in creating innovative user interfaces and
+      complex user interactions, adhering to inclusive design principles and
+      atomic design methodology.
+    </p>
+
+    <p>
+      My expertise extends to architectural design patterns, microservices, code
+      standards, and generative modeling. I am proficient in building backend
+      applications and services using Node.js, PHP, Ruby, and Scala, and I hold
+      a post-baccalaureate certificate in database management. I am passionate
+      about leveraging technology to create accessible and seamless digital
+      experiences for all users.
+    </p>
+  </div>
+{% endmacro %}
+
+{% macro umd() %}
+  <resume-experience data-id="umd">
+    <resume-position>
+      <h4>
+        <span>Executive Director</span>
+        Design & Development
+      </h4>
+      <p>
+        July 2020 - Present
+      </p>
+    </resume-position>
+
+    <resume-company>
+      <h4>
+        The University of Maryland
+      </h4>
+      <p>
+        College Park, Maryland
+      </p>
+    </resume-company>
+    <p>
+      The University of Maryland is a prestigious institution of higher
+      education in the United States, celebrated for its distinguished research
+      and computer science programs that are recognized worldwide. Consistently
+      ranked among the nation's top educational establishments, UMD is also
+      acclaimed for its commitment to inclusivity, being recognized as a leading
+      college for LGBTQ+ students.
+    </p>
+
+    <resume-point>
+      <h5>
+        Design System - Principal Architect
+      </h5>
+      <ul>
+        <li>
+          Led the initative to create a scalable, cohesive, accessible UI
+          framework.
+        </li>
+        <li>
+          Created atomic components to be used across multiple products,
+          standardizing interfaces and enforcing accessibility compliance.
+        </li>
+        <li>
+          Documented usage and component guidelines, empowering cross-functional
+          teams to implement and extend the system efficiently.
+        </li>
+        <li>
+          Established a versioning and release process for the design system,
+          ensuring backward compatibility.
+        </li>
+        <li>Reduced development time for new features by 50%</li>
+      </ul>
+    </resume-point>
+
+    <resume-point>
+      <h5>
+        Engineering & UX Design Leadership
+      </h5>
+      <ul>
+        <li>
+          Oversaw the software development lifecycle, from planning and
+          architecture to deployment and maintenance, for many high-profile
+          projects with a combined budget of $5 million.
+        </li>
+        <li>
+          Managed and mentored a team of engineers and UX designers, fostering
+          growth through performance feedback, technical guidance, and career
+          development plans.
+        </li>
+        <li>
+          Developed and managed project roadmaps, aligning engineering
+          deliverables with product release schedules based on business
+          priorities.
+        </li>
+        <li>
+          Championed a culture of innovation and collaboration within the
+          engineering team, resulting in employee retention and satisfaction.
+        </li>
+        <li>
+          Designed and implemented a comprehensive onboarding process for new
+          hires, improving employee productivity and engagement through
+          structured training, documentation, and mentorship programs.
+        </li>
+      </ul>
+    </resume-point>
+
+    <resume-point>
+      <h5>
+        Decoupled Data Services
+      </h5>
+      <ul>
+        <li>
+          Architected and implemented a decoupled front-end system using
+          React.js and Web Components that interfaced with microservices via
+          GraphQL APIs.
+        </li>
+        <li>
+          Designed and integrated a service layer to abstract API calls to
+          digest and distribute campus-wide data.
+        </li>
+        <li>
+          Reduced payload sizes by implementing GraphQL with dynamic queries.
+        </li>
+        <li>Bulk processing API endpoints for JSON and CSV.</li>
+      </ul>
+    </resume-point>
+
+    <resume-point>
+      <h5>
+        Accessibility Compliance
+      </h5>
+      <ul>
+        <li>
+          Led accessibility compliance efforts across web applications, ensuring
+          adherence to WCAG 2.1 standards and improving usability for users with
+          disabilities, resulting in a 20% increase in accessibility score.
+        </li>
+        <li>Conducted accessibility workshops and audits.</li>
+        <li>
+          Integrated automated accessibility testing tools, such as Lighthouse,
+          reduce manual QA efforts and improve accessibility compliance coverage
+          by 50%.
+        </li>
+      </ul>
+    </resume-point>
+  </resume-experience>
+{% endmacro %}
+
+{% macro ua() %}
+  <resume-experience data-id="ua">
+    <resume-position>
+      <h4>
+        Software Engineer
+      </h4>
+      <p>
+        July 2019 - June 2020
+      </p>
+    </resume-position>
+    <resume-company>
+      <h4>
+        Under Armour
+      </h4>
+      <p>
+        Baltimore, Maryland
+      </p>
+    </resume-company>
+    <p>
+      Under Armour is a globally recognized leader in sports apparel, known for
+      its commitment to innovation and performance-driven products. With over
+      two decades of industry experience, the company leverages cutting-edge
+      technology, including React, Scala, and Node.js, to drive its advanced
+      digital framework and deliver exceptional user experiences across its
+      platforms.
+    </p>
+
+    <resume-point>
+      <h5>
+        B2B E-Commerce Application - ArmourHouse
+      </h5>
+      <ul>
+        <li>
+          Developed and maintained a robust B2B e-commerce platform with
+          multilingual support built with Typescript, React, Redux, Apollo,
+          React Router, Ramda, Scala, and PostgreSQL.
+        </li>
+        <li>Created a React component library with Storybook integration.</li>
+        <li>
+          Implemented complex state management solutions with Redux to handle
+          inventory, pricing, order processing, account management, promotions,
+          etc.
+        </li>
+
+        <li>
+          Led the migration of legacy code to a modern React architecture,
+          enhancing the maintainability and scalability of the application for
+          future growth.
+        </li>
+        <li>
+          Implemented caching strategies and data normalization on the client
+          side using Redux and Apollo Client, improving data retrieval
+          efficiency and reducing redundant API calls by 50%.
+        </li>
+        <li>
+          Developed and optimized data processing workflows using Scala,
+          improving system performance and reducing processing through
+          efficiently handling large PostgreSQL datasets and parallel processing
+          techniques.
+        </li>
+      </ul>
+    </resume-point>
+
+    <resume-point>
+      <h5>
+        B2C E-Commerce Application - ua.com
+      </h5>
+      <ul>
+        <li>
+          Built and maintained React components for a high-traffic application.
+        </li>
+        <li>
+          Implemented an interface response system to mitigate DDoS attacks,
+          improving application resilience and reducing downtime through
+          real-time traffic monitoring, rate-limiting, and automated threat
+          detection protocols.
+        </li>
+        <li>
+          Improved application performance by implementing lazy loading with
+          GraphQL API for product data, resulting in faster content updates and
+          real-time inventory management.
+        </li>
+
+        <li>
+          Implemented responsive design and cross-browser compatibility,
+          ensuring a seamless shopping experience across desktop, mobile, and
+          tablet devices.
+        </li>
+        <li>
+          Conducted comprehensive accessibility workshops for cross- functional
+          teams, educating developers and designers on WCAG 2.1 guidelines and
+          best practices, resulting in improved accessibility compliance and a
+          reduction in accessibility-related issues.
+        </li>
+      </ul>
+    </resume-point>
+  </resume-experience>
+{% endmacro %}
+
+{% macro hc() %}
+  <resume-experience data-id="hc">
+    <resume-position>
+      <h4>
+        Developer, UX Designer
+      </h4>
+      <p>
+        February 2019 - July 2019
+      </p>
+    </resume-position>
+
+    <resume-company>
+      <h4>
+        HAPPY COG
+      </h4>
+      <p>
+        NY, New York (Remote)
+      </p>
+    </resume-company>
+    <p>
+      Happy Cog is a renowned digital agency based in New York, offering a
+      comprehensive range of services including design, development, and
+      marketing. As a digital-first company, they have successfully partnered
+      with large corporations to elevate their digital marketing strategies.
+      Known for their innovative approach, Happy Cog has established itself as
+      one of the top digital marketing firms in the industry.
+    </p>
+
+    <resume-point>
+      <ul>
+        <li>
+          Led development and UX design for multiple high-traffic web
+          applications, collaborating with the &Pizza team to build scalable
+          Angular components for e-commerce and marketing platforms.
+        </li>
+        <li>
+          Developed headless web applications using React, React Router, and
+          Redux, implementing WCAG-compliant interfaces and integrating with PHP
+          and Python backends.
+        </li>
+        <li>
+          Organized and facilitated workshops for designers and developers,
+          promoting best practices in usability, accessibility, and semantic
+          HTML.
+        </li>
+        <li>
+          Mentored developers in advanced JavaScript techniques, including
+          functional programming, performance optimization, tree shaking, and
+          abstraction patterns.
+        </li>
+        <li>
+          Implemented continuous integration and deployment pipelines for React
+          and Angular applications, ensuring efficient and reliable release
+          processes.
+        </li>
+        <li>
+          Spearheaded rapid prototyping of React components for A/B testing and
+          client reviews, accelerating feedback loops and product iterations.
+        </li>
+      </ul>
+    </resume-point>
+  </resume-experience>
+{% endmacro %}
+
+{% macro at() %}
+  <resume-experience data-id="at">
+    <resume-position>
+      <h4>
+        Developer, UX Designer
+      </h4>
+      <p>
+        November 2011 - March 2019
+      </p>
+    </resume-position>
+    <resume-company>
+      <h4>
+        ALEX+TOM
+      </h4>
+      <p>
+        Baltimore, Maryland
+      </p>
+    </resume-company>
+    <p>
+      Alex+Tom is a prestigious digital agency with a proven track record
+      spanning over twenty-five years. Renowned in Baltimore for its unwavering
+      commitment to excellence, the agency offers a comprehensive suite of
+      services, including design, development, usability testing, and marketing.
+      For over two decades, Alex+Tom has been recognized as a leading usability
+      agency, consistently delivering high-quality digital solutions and
+      maintaining a reputation for exceptional service and expertise.
+    </p>
+
+    <resume-point>
+      <ul>
+        <li>
+          Led development and UX design for prestigious clients including the
+          Department of Treasury and the National Park Service, resulting in
+          award-winning interfaces and web services that transformed the digital
+          presence of government agencies and corporate entities.
+        </li>
+        <li>
+          Created over ten award-winning user interfaces using technologies such
+          as vanilla JavaScript, React, Ember, and Angular, delivering visually
+          appealing and highly functional digital experiences.
+        </li>
+        <li>
+          Supervised and mentored full-stack developers, facilitating
+          onboarding, conducting code reviews, and coordinating project
+          activities to ensure high-quality deliverables and team efficiency.
+        </li>
+        <li>
+          Developed server-side web services using Ruby, PHP, and Node,
+          implementing RESTful and GraphQL APIs with the MVC architectural
+          pattern to support scalable and robust applications.
+        </li>
+        <li>
+          Led workshops and mentored stakeholders, designers, content managers,
+          and developers on creating user-driven, accessible interfaces,
+          fostering collaboration and best practices in usability and
+          accessibility.
+        </li>
+        <li>
+          Configured and maintained FedRAMP-certified production servers on AWS
+          using Linux distributions such as CentOS, RedHat, and Amazon Linux
+          (AMI), ensuring secure and reliable infrastructure for critical
+          applications.
+        </li>
+        <li>
+          Served as Product Owner for iOS store applications, CMS plugins, and
+          analytical tracking tools, overseeing product development from concept
+          to deployment.
+        </li>
+        <li>
+          Utilized rapid prototyping techniques, including usability testing
+          with eye-tracking technology and A/B comparative analysis, to create
+          and iterate UI components swiftly and effectively.
+        </li>
+      </ul>
+    </resume-point>
+  </resume-experience>
+{% endmacro %}
+
+{% block main %}
+  <a href="#main" class="skip-content">Skip to main content</a>
+  {% include '_components/menu' %}
+
+  <main id="main" class="resume-page">
+    <img src="/images/resume-background.jpg"
+      alt="background texture"
+      aria-hidden="true" />
+    <div class="container">
+      <div>
+        <resume-head>
+          <div>
+            <h1>
+              Josh Magness
+            </h1>
+            <h2>
+              Software Engineer
+            </h2>
+          </div>
+
+          <div class="contact-actions">
+            <div>
+              <button aria-label="View Menu"
+                type="button"
+                aria-controls="navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+                Menu
+              </button>
+            </div>
+            <div>
+              <a href="tel:4436190627" class="slide-line">
+                {% include '_icons/phone' %}
+                <span>443.619.0627</span>
+              </a>
+            </div>
+            <div>
+              <a href="mailto:magnessjo@gmail.com" class="slide-line">
+                {% include '_icons/email' %}
+                <span>magnessjo@gmail.com</span>
+              </a>
+            </div>
+          </div>
+        </resume-head>
+
+        <hr class="thick" aria-hidden="true" />
+
+        <div class="two-column">
+          <div>
+            {{ _self.Profile() }}
+
+            <h3 class="headline-block">
+              Work Experience
+            </h3>
+
+            {{ _self.umd() }}
+            {{ _self.ua() }}
+            {{ _self.hc() }}
+            {{ _self.at() }}
+          </div>
+
+          <div>
+            {{ _self.Skills() }}
+            {{ _self.Education() }}
+            {{ _self.Social() }}
+            {{ _self.Awards() }}
+            {{ _self.Interests() }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+{% endblock %}
