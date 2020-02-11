@@ -1,0 +1,35 @@
+{
+  "name": "Josh Magness",
+  "short_name": "JM",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#404040",
+  "description": "Josh Magness: Software Engineering",
+  "icons": [
+    {
+      "src": "/images/og.jpg",
+      "type": "image/jpg",
+      "sizes": "128x128"
+    },
+    {
+      "src": "/images/og.jpg",
+      "type": "image/jpg",
+      "sizes": "152x152"
+    },
+    {
+      "src": "/images/og.jpg",
+      "type": "image/jpg",
+      "sizes": "144x144"
+    },
+    {
+      "src": "/images/og.jpg",
+      "type": "image/jpg",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/og.jpg",
+      "type": "image/jpg",
+      "sizes": "512x512"
+    }
+  ]
+}

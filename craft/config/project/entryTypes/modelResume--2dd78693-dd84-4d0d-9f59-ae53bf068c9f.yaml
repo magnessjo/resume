@@ -1,0 +1,50 @@
+color: null
+fieldLayouts:
+  c4ea721c-28df-401a-b039-7886aec0093e:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 3161d161-a576-48d7-85cd-0a65c41de0d4
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 4aa08685-7280-4f29-983a-cba8fba43737
+        userCondition: null
+handle: modelResume
+hasTitleField: true
+icon: ''
+name: 'Model - Resume'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

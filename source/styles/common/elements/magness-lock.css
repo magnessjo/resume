@@ -1,0 +1,11 @@
+magness-lock {
+  padding: 0 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+
+  @media (--medium-min) {
+    padding: 0 48px;
+  }
+}

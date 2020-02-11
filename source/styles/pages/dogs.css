@@ -1,0 +1,68 @@
+@import '../master.css';
+
+.dogs-page {
+  overflow: hidden;
+}
+
+.dogs-page button[aria-controls='navigation'] {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  z-index: 999;
+  background-color: white;
+}
+
+.dogs-page .image-slides {
+  position: relative;
+  overflow: hidden;
+
+  & magness-loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  & .content {
+    opacity: 0;
+    display: grid;
+    grid-gap: 10px;
+    margin: 10px 0;
+    padding: 0;
+  }
+
+  & .slider {
+    position: relative;
+    transition: transform 1s ease-in-out;
+
+    & .wrapper {
+      display: flex;
+      position: absolute;
+      left: 0;
+    }
+
+    & .slide {
+      white-space: nowrap;
+
+      & > div {
+        display: inline-block;
+        width: 200px;
+        margin-right: 10px;
+
+        @media (--tablet-min) {
+          width: 300px;
+        }
+      }
+
+      & img {
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        object-position: 50% 50%;
+      }
+    }
+  }
+
+  & .row {
+    position: relative;
+  }
+}
