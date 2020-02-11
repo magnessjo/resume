@@ -1,0 +1,38 @@
+:root {
+  --montserrat: 'Montserrat', Helvetica, Arial, Verdana, sans-serif;
+  --bebasNeue: 'Bebas Neue', Helvetica, Arial, Verdana, sans-serif;
+  --mono: 'Inconsolata', monospace;
+
+  --white: #ffffff;
+  --whiteOff: #fcf5db;
+  --whiteDark: #bfb59e;
+  --greenLight: #afab99;
+  --greenMedium: #d6d0ba;
+  --greenDark: #706d61;
+
+  --grayDark: #404040;
+  --gray: #737373;
+  --grayLight: #bfbfbf;
+
+  font-family: var(--montserrat);
+  font-size: 16px;
+  line-height: 1.4em;
+  color: var(--grayDark);
+}
+
+@custom-media --small-min (min-width: 320px);
+@custom-media --small-max (max-width: 479px);
+
+@custom-media --medium-min (min-width: 480px);
+@custom-media --medium-max (max-width: 649px);
+
+@custom-media --large-min (min-width: 650px);
+@custom-media --large-max (max-width: 767px);
+
+@custom-media --tablet-min (min-width: 768px);
+@custom-media --tablet-max (max-width: 1023px);
+
+@custom-media --desktop-min (min-width: 1024px);
+@custom-media --desktop-max (max-width: 1399px);
+
+@custom-media --x-large (min-width: 1400px);

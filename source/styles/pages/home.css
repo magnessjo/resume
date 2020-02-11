@@ -1,0 +1,238 @@
+@import '../master.css';
+
+body {
+  background-color: var(--whiteOff);
+  overscroll-behavior: none;
+  position: relative;
+}
+
+main {
+  position: relative;
+  display: block;
+  min-height: calc(100vh - 152px);
+  min-height: 300vh;
+  padding: 76px 0;
+  background-color: var(--whiteDark);
+  z-index: 99;
+  transform: translate3d(0, 0, 0);
+}
+
+/* menu,
+.menu-background {
+  position: fixed;
+  height: 44px;
+  width: 44px;
+  right: 30px;
+  top: 30px;
+}
+
+menu {
+  position: fixed;
+  display: block;
+  right: 31px;
+  top: 30px;
+  z-index: 999;
+
+  & button {
+    width: 44px;
+    height: 44px;
+    position: relative;
+  }
+
+  & span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: var(--grayDark);
+    position: absolute;
+    top: 13px;
+    right: 11px;
+    transform: rotate(0);
+    transition: transform 0.4s;
+
+    &:first-child {
+      top: 20px;
+    }
+
+    &:last-child {
+      top: 27px;
+    }
+  }
+}
+
+.menu-background {
+  display: block;
+  height: 44px;
+  width: 44px;
+  background-color: var(--whiteOff);
+  right: 30px;
+  top: 30px;
+  z-index: 9;
+}
+
+.menu-bottom {
+  background-color: var(--whiteDark);
+} */
+
+@keyframes cursor-blink {
+  0% {
+    opacity: 0;
+  }
+}
+
+header {
+  display: block;
+  padding: 76px 0;
+  min-height: 40vh;
+  overflow: hidden;
+
+  & .columns {
+    display: flex;
+
+    & > * {
+      &:last-child {
+        width: 60%;
+        padding-left: 64px;
+      }
+
+      &:first-child {
+        width: 40%;
+        padding-right: 64px;
+      }
+    }
+  }
+
+  & .contact {
+    & > div:first-child {
+      float: left;
+      padding-right: 32px;
+      padding-bottom: 8px;
+    }
+  }
+
+  & .contact .image-slider {
+    & .wrapper {
+      height: 250px;
+      width: 250px;
+      position: relative;
+
+      & > div {
+        height: 250px;
+
+        & img {
+          max-height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          transition: opacity 0.4s ease-in-out;
+        }
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        background-color: var(--grayDark);
+        background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.2),
+          rgba(0, 0, 0, 0.05)
+        );
+        height: 100%;
+        width: calc(100% + 2px);
+        left: 3px;
+        top: 2px;
+        transform: rotate(0.5deg);
+      }
+    }
+  }
+
+  & .contact .social {
+    display: flex;
+    justify-content: center;
+    margin: 16px 0;
+
+    & a {
+      display: block;
+      padding: 8px;
+      transition: background-color 0.4s ease-in-out;
+
+      &:hover,
+      &:focus {
+        background-color: var(--grayDark);
+
+        & svg {
+          fill: var(--whiteOff);
+        }
+      }
+    }
+
+    & a:not(:last-child) {
+      margin-right: 16px;
+    }
+
+    & svg {
+      width: 32px;
+      display: block;
+      fill: var(--grayDark);
+      transition: fill 0.4s ease-in-out;
+    }
+  }
+
+  & .contact .call-to-action {
+    width: 100%;
+    text-align: center;
+  }
+
+  & .highlights {
+    text-align: center;
+
+    & h1 {
+      font-size: calc(18px + 2vw);
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+
+    & li:first-child {
+      & span {
+        opacity: 1;
+        position: relative;
+
+        &:before {
+          content: '';
+          position: absolute;
+          width: 20px;
+          height: 2px;
+          background-color: var(--grayDark);
+          right: -20px;
+          bottom: 0;
+          left: 0;
+        }
+      }
+    }
+
+    & li {
+      list-style: none;
+
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+
+      & span {
+        opacity: 0;
+      }
+    }
+
+    & ul {
+      font-family: var(--mono);
+      font-size: calc(18px + 0.4vw);
+      font-weight: 600;
+      padding-left: 0;
+      display: flex;
+      flex-direction: column;
+      height: calc(100% - 96px);
+      justify-content: space-between;
+    }
+  }
+}

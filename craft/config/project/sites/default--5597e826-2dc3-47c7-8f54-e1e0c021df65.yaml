@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en-US
+name: 'Magness Localhost'
+primary: true
+siteGroup: 9e834e2d-1bea-4829-83d6-c552b18b2dfe # Magness Localhost
+sortOrder: 1

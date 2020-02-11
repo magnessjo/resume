@@ -1,0 +1,30 @@
+/* Dependencies */
+
+@import './dependencies/root.css';
+@import './dependencies/reset.css';
+
+/* Common Elements */
+
+@import './common/elements/magness-lock.css';
+
+/* Common Classes */
+
+@import './common/class/accessibility.css';
+@import './common/class/fonts.css';
+@import './common/class/call-to-action.css';
+@import './common/class/separator.css';
+
+/* Common Layout */
+
+@import './common/layout/grid.css';
+
+/* Common Animations */
+
+@import './common/animations/slide-line.css';
+
+/* Components */
+
+@import './components/header.css';
+@import './components/footer.css';
+@import './components/menu.css';
+@import './components/loader.css';
