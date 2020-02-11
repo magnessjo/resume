@@ -1,0 +1,53 @@
+{
+  "name": "magness",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf craft/web/*",
+    "build": "npx webpack --env NODE_ENV=production",
+    "start": "webpack -w --env NODE_ENV=development"
+  },
+  "author": "magnessjo",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "*",
+    "@babel/node": "*",
+    "@babel/preset-env": "*",
+    "babel-loader": "*",
+    "colors": "*",
+    "copy-webpack-plugin": "*",
+    "css-loader": "*",
+    "css-minimizer-webpack-plugin": "*",
+    "mini-css-extract-plugin": "*",
+    "postcss": "*",
+    "postcss-import": "*",
+    "postcss-loader": "*",
+    "postcss-preset-env": "*",
+    "prettier": "^2.8.8",
+    "prettier-plugin-twig-melody": "^0.4.6",
+    "style-loader": "*",
+    "ts-loader": "*",
+    "typescript": "*",
+    "webpack": "*",
+    "webpack-cli": "*",
+    "webpack-shell-plugin-next": "*",
+    "workbox-webpack-plugin": "*"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env"
+      ]
+    ]
+  },
+  "postcss": {
+    "map": false,
+    "plugins": {
+      "postcss-import": {},
+      "postcss-preset-env": {
+        "stage": 0
+      }
+    }
+  }
+}

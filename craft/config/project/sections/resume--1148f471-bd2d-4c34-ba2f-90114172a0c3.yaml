@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 2dd78693-dd84-4d0d-9f59-ae53bf068c9f # Model - Resume
+handle: resume
+maxAuthors: 1
+name: Resume
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  5597e826-2dc3-47c7-8f54-e1e0c021df65: # Magness Localhost
+    enabledByDefault: true
+    hasUrls: true
+    template: resume
+    uriFormat: __home__
+type: single

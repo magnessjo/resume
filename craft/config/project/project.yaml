@@ -1,0 +1,24 @@
+dateModified: 1737392950
+email:
+  fromEmail: magnessjo@gmail.com
+  fromName: 'Magness Localhost'
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    2dd78693-dd84-4d0d-9f59-ae53bf068c9f: 'Model - Resume' # Model - Resume
+    9e834e2d-1bea-4829-83d6-c552b18b2dfe: 'Magness Localhost' # Magness Localhost
+    1148f471-bd2d-4c34-ba2f-90114172a0c3: Resume # Resume
+    5597e826-2dc3-47c7-8f54-e1e0c021df65: 'Magness Localhost' # Magness Localhost
+system:
+  edition: solo
+  live: true
+  name: 'Magness Localhost'
+  schemaVersion: 5.5.0.0
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  require2fa: false
+  requireEmailVerification: true

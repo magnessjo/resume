@@ -1,0 +1,23 @@
+.slide-line {
+  position: relative;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: var(--grayDark);
+
+    span {
+      background-size: 100% 1px;
+    }
+  }
+
+  & span {
+    display: inline;
+    position: relative;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    transition: background 0.5s;
+    background-size: 0 1px;
+    background-image: linear-gradient(#404040, #404040);
+  }
+}
