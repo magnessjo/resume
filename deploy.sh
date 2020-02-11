@@ -1,0 +1,1 @@
+rsync -avzh ~/personal/sites/static/resume/* magness:/srv/http/resume
