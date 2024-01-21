@@ -1,0 +1,123 @@
+header {
+  display: block;
+  padding: 76px 0;
+  min-height: 40vh;
+
+  & .columns {
+    display: flex;
+
+    & > * {
+      &:last-child {
+        width: 60%;
+        padding-left: 64px;
+      }
+
+      &:first-child {
+        width: 40%;
+        padding-right: 64px;
+      }
+    }
+  }
+
+  & .contact {
+    & > div:first-child {
+      float: left;
+      padding-right: 32px;
+      padding-bottom: 8px;
+    }
+  }
+
+  & .contact .image {
+    & .wrapper {
+      height: 250px;
+      width: 250px;
+      position: relative;
+
+      & > div {
+        height: 250px;
+
+        & img {
+          max-height: 100%;
+          position: relative;
+        }
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        background-color: var(--grayDark);
+        height: calc(100% + 2px);
+        width: calc(100% + 2px);
+        left: 2px;
+        top: 2px;
+        opacity: 0.85;
+      }
+    }
+  }
+
+  & .contact .social {
+    display: flex;
+    justify-content: center;
+    margin: 16px 0;
+
+    & a {
+      display: block;
+      padding: 8px;
+      transition: background-color 0.4s ease-in-out;
+
+      &:hover,
+      &:focus {
+        background-color: var(--grayDark);
+
+        & svg {
+          fill: var(--whiteOff);
+        }
+      }
+    }
+
+    & a:not(:last-child) {
+      margin-right: 16px;
+    }
+
+    & svg {
+      width: 32px;
+      display: block;
+      fill: var(--grayDark);
+      transition: fill 0.4s ease-in-out;
+    }
+  }
+
+  & .contact .call-to-action {
+    width: 100%;
+    text-align: center;
+  }
+
+  & .highlights {
+    text-align: center;
+
+    & h1 {
+      font-size: calc(18px + 2vw);
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+
+    & li {
+      list-style: none;
+
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+
+    & ul {
+      font-family: var(--mono);
+      font-size: calc(18px + 0.4vw);
+      font-weight: 600;
+      padding-left: 0;
+      display: flex;
+      flex-direction: column;
+      height: calc(100% - 96px);
+      justify-content: space-between;
+    }
+  }
+}

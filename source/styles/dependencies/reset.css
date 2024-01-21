@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--whiteOff);
+  overscroll-behavior: none;
+  position: relative;
+}
+
+main {
+  position: relative;
+  display: block;
+  min-height: calc(100vh - 152px);
+  min-height: 300vh;
+  padding: 76px 0;
+  background-color: var(--whiteDark);
+}
+
+.separator {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+
+  &:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 16px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 14px solid var(--grayDark);
+    display: block;
+    position: absolute;
+    top: -7px;
+    left: -10px;
+    transform: rotate(24deg);
+    z-index: 99;
+  }
+
+  & > svg {
+    transform: rotate(180deg);
+    position: absolute;
+    top: 0px;
+    left: -20px;
+    width: calc(100% + 20px);
+
+    & path {
+      fill: var(--grayDark);
+    }
+  }
+
+  & > svg:last-child {
+    top: -8px;
+    width: 100%;
+    left: 0;
+
+    & path {
+      fill: var(--whiteOff);
+    }
+  }
+}
+
+section {
+  z-index: 9;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 1.4em;
+  font-weight: normal;
+  color: var(--grayDark);
+}
+
+p {
+  margin-bottom: 16px;
+  line-height: 1.7em;
+  max-width: 960px;
+  font-weight: 500;
+
+  & a {
+    color: currentColor;
+  }
+}
+
+p > a,
+li > a,
+em > a,
+strong > a {
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+}
+
+a {
+  color: var(--grayDark);
+  transition: color 0.5s;
+
+  &:hover,
+  &:focus {
+    color: var(--grayLight);
+  }
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul,
+ol {
+  padding-left: 32px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+& li {
+  color: var(--grayDark);
+}
+
+hr {
+  margin: 16px 0;
+  height: 1px;
+  border: none;
+  background-color: var(--grayDark);
+
+  &.thick {
+    margin: 32px 0;
+    height: 2px;
+  }
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--sansSerif);
+}
+
+input,
+select {
+  font-family: var(--sansSerif);
+}
+
+& input[type='text'] {
+  height: 44px;
+  border: 1px var(--grayLight);
+  padding: 12px;
+  background-color: var(--grayDark);
+  font-weight: 600;
+  font-size: 16px;
+}

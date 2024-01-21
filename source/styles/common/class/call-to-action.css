@@ -1,0 +1,16 @@
+.call-to-action {
+  display: inline-block;
+  padding: 16px 24px;
+  border: 2px solid var(--grayDark);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
+  transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
+
+  &:hover,
+  &:focus {
+    background-color: var(--grayDark);
+    color: var(--white);
+  }
+}

@@ -1,0 +1,51 @@
+menu,
+.menu-background {
+  position: fixed;
+}
+
+menu {
+  display: block;
+  right: 31px;
+  top: 30px;
+  z-index: 999;
+
+  & button {
+    width: 44px;
+    height: 44px;
+    position: relative;
+  }
+
+  & span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: var(--grayDark);
+    position: absolute;
+    top: 13px;
+    right: 11px;
+    transform: rotate(0);
+    transition: transform 0.4s;
+
+    &:first-child {
+      top: 20px;
+    }
+
+    &:last-child {
+      top: 27px;
+    }
+  }
+}
+
+.menu-background {
+  display: block;
+  height: 44px;
+  width: 44px;
+  background-color: var(--whiteOff);
+  right: 30px;
+  top: 30px;
+}
+
+.menu-bottom {
+  display: none;
+  background-color: var(--whiteDark);
+}

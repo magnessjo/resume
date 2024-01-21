@@ -13,6 +13,7 @@ module.exports = (env) => {
   const entrypoints = {
     app: path.resolve('source/scripts/app'),
     home: path.resolve('source/scripts/home'),
+    old: path.resolve('source/scripts/old'),
   };
 
   const modules = {

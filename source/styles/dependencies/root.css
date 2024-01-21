@@ -1,0 +1,20 @@
+:root {
+  --sansSerif: 'Josefin Sans', Helvetica, Arial, Verdana, sans-serif;
+  --mono: 'Inconsolata', monospace;
+
+  --white: #ffffff;
+  --whiteOff: #fcf5db;
+  --whiteDark: #bfb59e;
+  --greenLight: #afab99;
+  --greenMedium: #d6d0ba;
+  --greenDark: #706d61;
+
+  --grayDark: #404040;
+  --gray: #737373;
+  --grayLight: #bfbfbf;
+
+  font-family: var(--sansSerif);
+  font-size: 16px;
+  line-height: 1.4em;
+  color: var(--grayDark);
+}
