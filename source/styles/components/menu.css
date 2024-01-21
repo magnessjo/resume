@@ -1,6 +1,11 @@
 menu,
 .menu-background {
   position: fixed;
+  display: block;
+  height: 44px;
+  width: 44px;
+  right: 30px;
+  top: 30px;
 }
 
 menu {
@@ -43,9 +48,9 @@ menu {
   background-color: var(--whiteOff);
   right: 30px;
   top: 30px;
+  z-index: 9;
 }
 
 .menu-bottom {
-  display: none;
   background-color: var(--whiteDark);
 }

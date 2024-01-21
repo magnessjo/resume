@@ -10,58 +10,6 @@ body {
   position: relative;
 }
 
-main {
-  position: relative;
-  display: block;
-  min-height: calc(100vh - 152px);
-  min-height: 300vh;
-  padding: 76px 0;
-  background-color: var(--whiteDark);
-}
-
-.separator {
-  position: absolute;
-  top: 0px;
-  width: 100%;
-
-  &:before {
-    content: '';
-    width: 0;
-    height: 0;
-    border-left: 16px solid transparent;
-    border-right: 15px solid transparent;
-    border-top: 14px solid var(--grayDark);
-    display: block;
-    position: absolute;
-    top: -7px;
-    left: -10px;
-    transform: rotate(24deg);
-    z-index: 99;
-  }
-
-  & > svg {
-    transform: rotate(180deg);
-    position: absolute;
-    top: 0px;
-    left: -20px;
-    width: calc(100% + 20px);
-
-    & path {
-      fill: var(--grayDark);
-    }
-  }
-
-  & > svg:last-child {
-    top: -8px;
-    width: 100%;
-    left: 0;
-
-    & path {
-      fill: var(--whiteOff);
-    }
-  }
-}
-
 section {
   z-index: 9;
   position: relative;
@@ -160,4 +108,15 @@ select {
   background-color: var(--grayDark);
   font-weight: 600;
   font-size: 16px;
+}
+
+main {
+  position: relative;
+  display: block;
+  min-height: calc(100vh - 152px);
+  min-height: 300vh;
+  padding: 76px 0;
+  background-color: var(--whiteDark);
+  z-index: 99;
+  transform: translate3d(0, 0, 0);
 }

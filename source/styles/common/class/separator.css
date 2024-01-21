@@ -1,0 +1,43 @@
+.separator {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+
+  &:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 16px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 14px solid var(--grayDark);
+    display: block;
+    position: absolute;
+    top: -7px;
+    left: -10px;
+    transform: rotate(24deg);
+    z-index: 99999;
+  }
+
+  & > svg {
+    transform: rotate(180deg);
+    position: absolute;
+    top: 0px;
+    left: -20px;
+    width: calc(100% + 20px);
+
+    & path {
+      fill: var(--grayDark);
+    }
+  }
+
+  & > svg:last-child {
+    top: -8px;
+    width: 100%;
+    left: 0;
+    z-index: 999;
+
+    & path {
+      fill: var(--whiteOff);
+    }
+  }
+}
